@@ -1,0 +1,338 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Unity Random":
+	{
+		"scope": "csharp",
+		"prefix": "unrand",
+		"body":[
+			"using Random = UnityEngine.Random;"
+		],
+		"description": "Specified Random to unity's random"
+	},
+
+	"Get Private Set":
+	{
+		"scope": "csharp",
+		"prefix": "gps",
+		"body":[
+			"{get; private set;}"
+		],
+		"description": "restricts a public variable to be set privately"
+	},
+
+	"Serialize Field":
+	{
+		"scope": "csharp",
+		"prefix": "sf",
+		"body":[
+			"[SerializeField]"
+		],
+		"description": "Serialize a field"
+	},
+
+	"Serialize Field GetSetter":
+	{
+		"scope": "csharp",
+		"prefix": "fsf",
+		"body":[
+			"[field: SerializeField] public $0 {get; private set;}"
+		],
+		"description": "Serialize a publicly gettable privatly settable variable"
+	},
+
+	"Serialize Field Protected GetSetter":
+	{
+		"scope": "csharp",
+		"prefix": "fsfp",
+		"body":[
+			"[field: SerializeField] protected $0 {get; private set;}"
+		],
+		"description": "Serialize a protected gettable privatly settable variable"
+	},
+
+	"SerializeField Public":
+	{
+		"scope": "csharp",
+		"prefix": "sfpu",
+		"body":[
+			"[SerializeField] public $0;"
+		],
+		"description": "Serialize a public variable in inspector"
+	},
+
+	"SerializeField Internal":
+	{
+		"scope": "csharp",
+		"prefix": "sfin",
+		"body":[
+			"[SerializeField] internal $0;"
+		],
+		"description": "Serialize an internal variable in inspector"
+	},
+
+	"SerializeField Protected":
+	{
+		"scope": "csharp",
+		"prefix": "sfpro",
+		"body":[
+			"[SerializeField] protected $0;"
+		],
+		"description": "Serialize a protected variable in inspector"
+	},
+
+	"SerializeField Private":
+	{
+		"scope": "csharp",
+		"prefix": "sfpr",
+		"body":[
+			"[SerializeField] private $0;"
+		],
+		"description": "Serialize a private variable in inspector"
+	},
+
+	"Serializable":
+	{
+		"scope": "csharp",
+		"prefix": "ser",
+		"body":[
+			"[System.Serializable]"
+		],
+		"description": "Serialize a class or struct"
+	},
+
+	"Summary Tooltip":
+	{
+		"scope":"csharp",
+		"prefix": "stt",
+		"body":
+		[
+			"///<summary>${1:description}</summary>\n[Tooltip(\"${1:description}\")]"
+		],
+		"description": "Writes a summary and a tooltip",
+	},
+
+	"Tooltip Summary":
+	{
+		"scope":"csharp",
+		"prefix": "tts",
+		"body":
+		[
+			"///<summary>${1:description}</summary>\n[Tooltip(\"${1:description}\")]"
+		],
+		"description": "Writes a summary and a tooltip",
+	},
+
+	"Tooltip":
+	{
+		"scope":"csharp",
+		"prefix": "tt",
+		"body":
+		[
+			"[Tooltip(\"${1:description}\")]"
+		],
+		"description": "Writes a tooltip",
+	},
+
+	"Single Line Summary":
+	{
+		"scope":"csharp",
+		"prefix": "ss",
+		"body":
+		[
+			"///<summary>$0</summary>"
+		],
+		"description": "Writes a summary",
+	},
+
+	"Header":
+	{
+		"scope": "csharp",
+		"prefix": "head",
+		"body":[
+			"[Header(\"$0\")]"
+		],
+		"description": "Creates a header"
+	},
+
+	"Space":
+	{
+		"scope": "csharp",
+		"prefix": "space",
+		"body":[
+			"[Space]\n"
+		],
+		"description": "Creates a Space"
+	},
+
+	"Range":
+	{
+		"scope":"csharp",
+		"prefix": "ra",
+		"body":
+		[
+			"[Range($1,$2)]"
+		],
+		"description": "Applies a range to a float or int",
+	},
+
+	"Range01":
+	{
+		"scope":"csharp",
+		"prefix": "raoo",
+		"body":
+		[
+			"[Range(0,1)]"
+		],
+		"description": "Applies a range to a float or int",
+	},
+
+	"MinMax":
+	{
+		"scope":"csharp",
+		"prefix": "mima",
+		"body":
+		[
+			"[Min($1),Max($2)]"
+		],
+		"description": "Applies a min and max to a float or int",
+	},
+
+	"MinMax01":
+	{
+		"scope":"csharp",
+		"prefix": "mimaoo",
+		"body":
+		[
+			"[Min(0),Max(1)]"
+		],
+		"description": "Applies a min and max to a float or int",
+	},
+
+	"OnEnableDisable":
+	{
+		"scope":"csharp",
+		"prefix": "onend",
+		"body":
+		[
+			"void OnEnable()\n{\n\t$1\n}\nvoid OnDisable()\n{\n\t$2\n}"
+		],
+		"description": "Creates on enable and on disable",
+	},
+
+	"QuaternionIdentity":
+	{
+		"scope":"csharp",
+		"prefix": "qi",
+		"body":
+		[
+			"Quaternion.identity"
+		],
+		"description": "Creates an Identity Quaternion",
+	},
+
+	"Debug.Log":
+	{
+		"scope": "csharp",
+		"prefix": "dlog",
+		"body":[
+			"#if UNITY_EDITOR || DEVELOPMENT_BUILD\nDebug.Log(\"$0\");\n#endif"
+		],
+		"description": "Logs a debug message"
+	},
+
+	"Debug.LogWarning":
+	{
+		"scope": "csharp",
+		"prefix": "dlogw",
+		"body":[
+			"#if UNITY_EDITOR || DEVELOPMENT_BUILD\nDebug.LogWarning(\"$0\");\n#endif"
+		],
+		"description": "Logs a warning message"
+	},
+
+	"Debug.LogError":
+	{
+		"scope": "csharp",
+		"prefix": "dloge",
+		"body":[
+			"#if UNITY_EDITOR || DEVELOPMENT_BUILD\nDebug.LogError(\"$0\");\n#endif"
+		],
+		"description": "Logs an error message"
+	},
+
+	"Not Null":
+	{
+		"scope": "csharp",
+		"prefix": "nnl",
+		"body":[
+			"!= null"
+		],
+		"description": "!= null"
+	},
+
+	"Is Null":
+	{
+		"scope": "csharp",
+		"prefix": "isnl",
+		"body":[
+			"== null"
+		],
+		"description": "== null"
+	},
+
+	"If Not Null":
+	{
+		"scope": "csharp",
+		"prefix": "ifnnl",
+		"body":[
+			"if($1 != null)\n{\n$2\n}"
+		],
+		"description": "if != null"
+	},
+
+	"If Is Null":
+	{
+		"scope": "csharp",
+		"prefix": "ifisnl",
+		"body":[
+			"if($1 == null)\n{\n$2\n}"
+		],
+		"description": "if == null"
+	},
+
+	"Assembly If Unity Editor":
+	{
+		"scope": "csharp",
+		"prefix": "asifue",
+		"body":[
+			"#if UNITY_EDITOR\n$0\n#endif"
+		],
+		"description": "Creates a conditional editor block"
+	},
+	
+	"Assembly If Unity Editor Or DevBuild":
+	{
+		"scope": "csharp",
+		"prefix": "asifue",
+		"body":[
+			"#if UNITY_EDITOR || DEVELOPMENT_BUILD\n$0\n#endif"
+		],
+		"description": "Creates a conditional editor block"
+	},
+}
