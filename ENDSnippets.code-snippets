@@ -251,7 +251,7 @@
 		"scope": "csharp",
 		"prefix": "dlog",
 		"body":[
-			"#if UNITY_EDITOR || DEVELOPMENT_BUILD\nDebug.Log(\"$0\");\n#endif"
+			"#if UNITY_EDITOR || DEVELOPMENT_BUILD\nDebug.Log($\"$0\");\n#endif"
 		],
 		"description": "Logs a debug message"
 	},
@@ -261,7 +261,7 @@
 		"scope": "csharp",
 		"prefix": "dlogw",
 		"body":[
-			"#if UNITY_EDITOR || DEVELOPMENT_BUILD\nDebug.LogWarning(\"$0\");\n#endif"
+			"#if UNITY_EDITOR || DEVELOPMENT_BUILD\nDebug.LogWarning($\"$0\");\n#endif"
 		],
 		"description": "Logs a warning message"
 	},
@@ -271,7 +271,7 @@
 		"scope": "csharp",
 		"prefix": "dloge",
 		"body":[
-			"#if UNITY_EDITOR || DEVELOPMENT_BUILD\nDebug.LogError(\"$0\");\n#endif"
+			"#if UNITY_EDITOR || DEVELOPMENT_BUILD\nDebug.LogError($\"$0\");\n#endif"
 		],
 		"description": "Logs an error message"
 	},
@@ -329,7 +329,7 @@
 	"Assembly If Unity Editor Or DevBuild":
 	{
 		"scope": "csharp",
-		"prefix": "asifue",
+		"prefix": "asifued",
 		"body":[
 			"#if UNITY_EDITOR || DEVELOPMENT_BUILD\n$0\n#endif"
 		],
